@@ -1,9 +1,19 @@
 import React from "react";
 
-export const UrlPage = () => {
+interface PageProps {
+  params: {
+    url: string | string[] | undefined;
+  };
+}
+
+const UrlPage = ({ params }: PageProps) => {
+  console.log(params);
+
   return (
     <>
-      <div>UrlPage</div>
+      <p>UrlPage</p>
     </>
   );
 };
+
+export default UrlPage;
